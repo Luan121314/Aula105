@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+#estruturadoGrid{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'nav nav nav nav'
+                         'section section aside aside'
+                         'footer footer aside aside';
+    grid-template-rows: 200px 50px 700px 100px;
+}
+header{
+    grid-area: header;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+header img {
+    width: 20%;
+}
+nav{
+    grid-area: nav;
+    background-color: lime;
+}
+section{
+    grid-area: section;
+    background-color: blueviolet;
+}
+aside{
+    grid-area: aside;
+    background-color: darksalmon;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+}
